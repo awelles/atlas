@@ -1,0 +1,70 @@
+name: Atlas
+main: com.robotbreakfast.atlas.Atlas
+version: 1.0
+
+commands:
+   map:
+      description: Gives you a map.
+      permission: atlas.map
+      usage: /<command> [name]
+   mapinfo:
+      description: Shows a map's center, zoom, etc etc
+      permission: atlas.mapinfo
+      usage: /<command> [map#]
+   mapfix:
+      description: Fix for Mojang's vertical-line bug. 
+      permission: atlas.mapfix
+      usage: /<command> [map#]
+   togglebeep:
+      description: beep on-off
+      permission: ibix.beep
+      usage: /<command> 
+   mapsave:
+      description: Save map names.
+      permission: atlas.mapsave
+      usage: /<command>
+   mapnames:
+      description: Show map names.
+      permission: atlas.mapnames
+      usage: /<command>
+   mapload:
+      description: Load map names.
+      permission: atlas.mapload
+      usage: /<command>
+   mapgivename:
+      description: Gives a name to a map #. 
+      permission: atlas.mapgivename
+      usage: /<command> <name> [map#]
+   mapdelname:
+      description: No more name.
+      permission: atlas.mapdelname
+      usage: /<command> <name> [map#]
+
+permissions:
+   atlas.map:
+      description: Access to atlas.map
+      default: true
+   atlas.mapinfo:
+      description: Access to atlas.mapinfo
+      default: true
+   atlas.mapfix:
+      description: Access to atlas.mapfix
+      default: true
+   ibix.beep:
+      description: Access to ibix.beep
+      default: true
+   atlas.mapsave:
+      description: Access to atlas.mapsave
+      default: true
+   atlas.mapnames:
+      description: Access to atlas.mapnames
+      default: true
+   atlas.mapload:
+      description: Access to atlas.mapload
+      default: true
+   atlas.mapgivename: 
+      description: Access to atlas.mapgivename
+      default: true
+   atlas.mapdelname:
+      description: Access to atlas.mapdelname
+      default: true
